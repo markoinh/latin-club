@@ -1,0 +1,1152 @@
+@charset "utf-8";
+/* CSS Document */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*Html style*/
+html {
+  font-size: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  overflow-x: hidden;
+}
+
+/*Index page*/
+/*start header*/
+header {
+  padding: 0 7.4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.top-nav {
+  width: 40%;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list a {
+  font-size: 1.6rem;
+}
+.nav-list a:hover {
+  color: #037971;
+}
+
+/*Hero image*/
+
+.hero-image {
+  width: 100%;
+  height: 50vh;
+  background: url(images/multicultural-club-hobart.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image h1 {
+  position: absolute;
+  top: 62%;
+  left: 6%;
+  background-color: #fff;
+  height: 10vh;
+  font-size: 4.8rem;
+  color: #fe5e41;
+  width: 90vh;
+}
+
+/*Grid Content*/
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem 0;
+}
+.content-grid-each {
+  padding: 0 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-grid-each h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+.content-grid-each p {
+  margin-bottom: 0.8rem;
+}
+.content-grid-each p,
+.content-grid-each ul {
+  font-size: 1.8rem;
+}
+.first,
+.second,
+.third {
+  height: 40vh;
+}
+.second {
+  background-color: #ffed66;
+}
+.employment-assistance {
+  background-color: #5438dc;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  height: 50vh;
+}
+.employment-assistance h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 2rem;
+}
+
+.fourth,
+.fifth,
+.sixth {
+  width: 90vh;
+}
+.volunteer {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  background-color: #fe5e41;
+  height: 50vh;
+}
+.volunteer h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 2rem;
+}
+
+.sixth {
+  display: flex;
+  flex-direction: column;
+}
+.mental-health {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  height: 50vh;
+}
+.mental-health h2 {
+  text-align: center;
+  font-size: 2.8rem;
+}
+.mental-health-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fifth a:hover {
+  border: solid 1px #037971;
+}
+
+.fifth .btn,
+.sixth .btn,
+.fourth .btn {
+  width: 35%;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.seventh h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/*Testimonials content*/
+.testimonial-and-social {
+  margin: 2rem 0;
+  background-color: #FCDEBE;
+}
+.testimonial {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+.each-testimonial {
+  width: 40vh;
+}
+.each-testimonial p {
+  font-size: 1.6rem;
+}
+.each-testimonial img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.each-testimonial .name {
+  text-align: center;
+  margin-top: 1rem;
+}
+/*Footer*/
+ .fot-wave{
+     display: flex;
+     flex-direction: column;
+ }
+footer {
+  background-color: #020e2b;
+  color: #fff;
+  padding: 0 7.4rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.footer-info h4 {
+  font-size: 2rem;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe label {
+  margin-bottom: 1.5rem;
+}
+.btn {
+  background-color: #037971;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.3rem 3rem;
+  border: none;
+}
+.btn:hover {
+  color: #037971;
+  background-color: #fff;
+}
+
+/*Gallery style*/
+.gallery {
+  margin: 2rem 0;
+  padding: 0 5.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.gallery h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.gallery-grid {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 4;
+  -moz-column-gap: 0px;
+  column-count: 4;
+  column-gap: 0px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+}
+
+/*Our philosophy*/
+.about-us {
+  display: flex;
+  padding: 0 3.5rem;
+}
+.content-story {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 1rem;
+}
+.content-story h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+.content-story p {
+  font-size: 18px;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.our-philosophy {
+  margin-top: 1.5rem;
+  padding: 0 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.values {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffed66;
+}
+.values h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+.values-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.value-each {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.value-each h3 {
+  font-size: 20px;
+}
+.mission-vision {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.mission-vision h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+.mission-vision p {
+  font-size: 18px;
+
+  color: #fff;
+  padding: 0 12rem;
+}
+.mission {
+  width: 50%;
+  background-color: #5438dc;
+  padding: 6rem 0;
+  height: 25vh;
+}
+.vision {
+  width: 50%;
+  background-color: #fe5e41;
+  padding: 6rem 0;
+  height: 25vh;
+}
+.shortvideo {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.shortvideo h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+.shortvideo iframe {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  height: 520px;
+  frameborder="0"
+}
+/*Contact style*/
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5438dc;
+}
+.contact-content {
+  color: #fff;
+  width: 50%;
+  padding: 10rem;
+}
+.contact-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.contact-content h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.contact-content p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.we-are-social {
+  margin: 1rem 7.4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #66cfe7;
+  color: #fff;
+  padding: 3rem;
+}
+.we-are-social h2 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+.social-media {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-media i:hover {
+  color: #037971;
+}
+.form-multi {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.sub {
+  font-size: 4rem;
+  left: 18%;
+  position: absolute;
+  color: #5438dc;
+}
+.form-contact {
+  background-color: #fe5e41;
+  border-radius: 0 10rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  margin: 8.5rem 0 1rem 0;
+  padding: 2rem 4rem 4rem 4rem;
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact-title h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.contact-form {
+  padding: 2.5rem;
+  color: #fff;
+}
+.input-group-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .input {
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 0;
+}
+.personal-information {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.phone-email {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.input-group {
+  padding-bottom: 2rem;
+  margin-left: 1rem;
+  width: 100%;
+}
+.contact-content-form form label,
+.contact-content-form form input {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.contact-content-form input:focus {
+  color: #000;
+}
+#message {
+  width: 100%;
+}
+.contact-content-form form .bt {
+  width: 20%;
+  margin-left: 1rem;
+  background-color: #037971;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  transition: 0.5s;
+}
+.contact-content-form .bt:hover {
+  color: #037971;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 428px) {
+    nav .close-button {
+        width: 18px;
+        float: right;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 80;
+        color: #fff;
+        margin: 2rem ;
+      }
+    nav{
+        position: fixed;
+        background: #020e2b;
+        padding: 0  ;
+        margin: ;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: right;
+        transform-origin: right;
+        z-index: 50;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+      .top-nav ul {
+        list-style-type: none;
+    margin: 0;
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+        width: 100%;
+      }
+      
+      .top-nav ul a {
+        color: white;
+        font-weight: bold;
+        font-size: 1.4em;
+      }
+      
+    header .menu-btn{
+        width: 18px;
+       margin-top: 4rem;
+        cursor: pointer;
+    }
+      
+      .top-nav ul li {
+        opacity: 0;
+      }
+      .show-menu {
+        display: block;
+        -webkit-animation: slide-menu 1s ease-in forwards;
+                animation: slide-menu 1s ease-in forwards;
+      }
+      
+      .show-menu .close-button {
+        -webkit-animation: show-x 1s 1s forwards;
+                animation: show-x 1s 1s forwards;
+      }
+      
+      .show-menu li:nth-of-type(1) {
+        -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
+                animation: menu-item-anim .6s forwards 1s ease-in-out;
+      }
+      
+      .show-menu li:nth-of-type(2) {
+        -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+                animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+      }
+      
+      .show-menu li:nth-of-type(3) {
+        -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+                animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+      }
+      
+      .show-menu li:nth-of-type(4) {
+        -webkit-animation: menu-item-anim .6s forwards 1.8s ease-in-out;
+                animation: menu-item-anim .6s forwards 1.8s ease-in-out;
+      }
+      
+      @-webkit-keyframes slide-menu {
+        from {
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0);
+        }
+        to {
+          -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+        }
+      }
+      
+      @keyframes slide-menu {
+        from {
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0);
+        }
+        to {
+          -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+        }
+      }
+      
+      @-webkit-keyframes show-x {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes show-x {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @-webkit-keyframes menu-item-anim {
+        from {
+          -webkit-transform: translateY(70%);
+                  transform: translateY(70%);
+          opacity: 0;
+        }
+        to {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes menu-item-anim {
+        from {
+          -webkit-transform: translateY(70%);
+                  transform: translateY(70%);
+          opacity: 0;
+        }
+        to {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+}
+
+@media (max-width: 1200px) {
+  .gallery-grid {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+  .hero-image h1 {
+    left: 5%;
+  }
+  .content-grid-each {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .employment-assistance,
+  .mental-health,
+  .volunteer {
+    height: 50vh;
+  }
+  footer {
+    padding: 0.5rem;
+  }
+  /*Contact style*/
+  .contact-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  .contact-content p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery-grid {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+  header {
+    padding: 0 4.4rem;
+  }
+  .hero-image h1 {
+    left: 10%;
+  }
+  .content-grid-each h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+  .content-grid-each p {
+    margin-bottom: 0.8rem;
+  }
+  .content-grid-each p,
+  .content-grid-each ul {
+    font-size: 1.6rem;
+  }
+  .employment-assistance,
+  .mental-health,
+  .volunteer {
+    height: 42vh;
+  }
+  .fifth .btn,
+  .sixth .btn,
+  .fourth .btn {
+    width: 45%;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 780px) {
+  .gallery-grid {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  .hero-image h1 {
+    position: absolute;
+    top: 62%;
+    left: 0;
+    background-color: #fff;
+    height: 10vh;
+    font-size: 2.8rem;
+    color: #fe5e41;
+    width: 80vh;
+  }
+  header {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .top-nav {
+    width: 60%;
+  }
+  .content-grid-each {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .employment-assistance,
+  .mental-health,
+  .volunteer {
+    height: 50vh;
+  }
+
+  .employment-assistance h2,
+  .mental-health h2,
+  .volunteer h2 {
+    margin-bottom: 2rem;
+  }
+  .fifth .btn,
+  .sixth .btn,
+  .fourth .btn {
+    width: 60%;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    padding: 0 2rem;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+  }
+  /*Our phillosophy*/
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-story {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .content-story h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .content-story p {
+    font-size: 1.6rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .our-philosophy {
+    margin-top: 1.5rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .values-content {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mission-vision h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .mission-vision p {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 0 5rem;
+  }
+  .mission {
+    width: 50%;
+    background-color: #5438dc;
+    padding: 6rem 0;
+    height: 35vh;
+  }
+  .vision {
+    width: 50%;
+    background-color: #fe5e41;
+    padding: 6rem 0;
+    height: 35vh;
+  }
+  .shortvideo iframe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 260px;
+  }
+  /*Contact style*/
+  .contact {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #fff;
+  }
+  .contact-content {
+    color: #fff;
+    width: 100%;
+    padding: 10rem;
+    background-color: #5438dc;
+  }
+  .contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .sub {
+    left: 10%;
+  }
+  .form-contact {
+    width: 90%;
+  }
+  .personal-information,
+  .phone-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-content-form form .bt {
+    width: 30%;
+  }
+}
+
+@media (max-width: 528px) {
+  .top-nav {
+    width: 90%;
+  }
+
+  .mental-health-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .employment-assistance,
+  .mental-health,
+  .volunteer {
+    height: 80vh;
+  }
+  .fourth,
+  .fifth,
+  .sixth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .fifth .btn,
+  .sixth .btn,
+  .fourth .btn {
+    width: 60%;
+  }
+  /*Our Phillosophy*/
+  .values-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .values h2 {
+    margin-bottom: 2rem;
+  }
+  .mission {
+    width: 100%;
+    background-color: #5438dc;
+    padding: 6rem 0;
+    height: 30vh;
+    margin-bottom: 2rem;
+  }
+  .vision {
+    width: 100%;
+    background-color: #fe5e41;
+    padding: 6rem 0;
+    height: 30vh;
+  }
+  .mission-vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mission-vision p {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 0 2rem;
+  }
+  /*Contact style*/
+  .contact-content {
+    color: #fff;
+    width: 100%;
+    padding: 5rem;
+    background-color: #5438dc;
+  }
+  .contact-content h1 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+  .contact-content p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .we-are-social h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .each-social {
+    margin-bottom: 4rem;
+  }
+  .sub {
+    font-size: 3rem;
+  }
+  .form-contact {
+    width: 90%;
+    padding: 2rem 0.5rem 2rem 0.5rem;
+  }
+  .input-group-wrap {
+    width: 100%;
+  }
+  .contact-title {
+    width: 100%;
+  }
+  .contact-content-form {
+    width: 100%;
+  }
+  .contact-content-form form .bt {
+    width: 50%;
+  }
+}
+
+@media (max-width: 428px) {
+  .gallery-grid {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  .hero-image h1 {
+    font-size: 2.4rem;
+  }
+  .content-grid-each {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first p,
+  .second p,
+  .third p, .second ul {
+    width: 80%;
+  }
+  .first,
+  .second,
+  .third {
+    height: 40vh;
+    
+  }
+  .fourth,
+  .first,
+  .second,
+  .third,
+  .fifth,
+  .sixth,
+  .seventh {
+    width: 100%;
+  }
+  .employment-assistance,
+  .mental-health,
+  .volunteer {
+    height: 70vh;
+  }
+  .mental-health-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fifth .btn,
+  .sixth .btn,
+  .fourth .btn {
+    width: 80%;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  .fourth,
+  .fifth,
+  .sixth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    padding: 0rem;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-info ul {
+    font-size: 1.6rem;
+  }
+  .subscribe {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+  }
+
+  .subscribe-sub {
+    display: flex;
+  }
+  /*Contact style*/
+  .contact-content {
+    color: #fff;
+    width: 100%;
+    padding: 3rem;
+    background-color: #5438dc;
+  }
+}
+@media screen and (min-width: 429px) {
+    header .menu-btn, header .close-button {
+      display: none;
+    }
+   
+  }
